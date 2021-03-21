@@ -26,7 +26,8 @@ for n in range(0, nr_symbols):
 print(f"Password list: {passwd_list}")
 
 #Hard Level - Order of characters randomised:
+random.shuffle(passwd_list)
 for n in range(0, len(passwd_list)):
-  passwd += passwd_list.pop(random.randrange(len(passwd_list)))
+  passwd += passwd_list[n]
 
 print(f"Random password: {passwd}")
